@@ -93,8 +93,7 @@ Este projeto foi criado para:
 📘 Consolidar conceitos de POO na prática
 🏛 Simular um sistema bancário realista
 ⚙️ Trabalhar lógica, validação e fluxo de menus
-💼 Montar um portfólio relevante para vagas como Estagiário Java
-🏦 Demonstrar entendimento de arquitetura aplicada — importante para bancos como Itaú, Bradesco, Santander e BV
+🏦 Demonstrar entendimento de arquitetura aplicada 
 
 🛠 Tecnologias Utilizadas
 
