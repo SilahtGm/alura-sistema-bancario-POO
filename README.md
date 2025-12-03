@@ -1,114 +1,123 @@
-#🏦 Sistema Bancário em Java – Versão POO (Refatorada)
+# 🏦 Sistema Bancário em Java – Versão POO (Refatorada)
 
-Este repositório contém a versão evoluída do meu Sistema Bancário, agora totalmente refatorado utilizando Programação Orientada a Objetos (POO).
-O objetivo desta nova versão é demonstrar minha progressão em Java através de uma arquitetura mais profissional, modular e próxima do que é usado em sistemas reais.
+Este repositório contém a versão evoluída do meu Sistema Bancário, agora totalmente refatorado utilizando **Programação Orientada a Objetos (POO)**.  
+O objetivo desta nova versão é demonstrar minha evolução em Java através de uma arquitetura mais profissional, modular e alinhada ao que é usado em sistemas reais.
 
-🚀 Evolução do Projeto
+---
+
+## 🚀 Evolução do Projeto
 
 Esta versão representa um salto significativo em relação ao projeto inicial (versão estruturada), evoluindo de:
 
-❌ Código monolítico no main
-❌ Variáveis soltas
-❌ Fluxo rígido
-❌ Dificuldade de manutenção
+❌ Código monolítico no `main`  
+❌ Variáveis soltas  
+❌ Fluxo rígido  
+❌ Difícil manutenção  
 
 para:
 
-✅ Arquitetura em camadas
-✅ Classes modelando entidades reais (Conta, Transação, Investimento)
-✅ Controllers responsáveis pela lógica de negócio
-✅ Menu principal organizando tudo como um sistema bancário verdadeiro
-✅ Possibilidade de expansão sem quebrar nada
+✅ Arquitetura em camadas  
+✅ Classes modelando entidades reais (Conta, Transação, Investimento)  
+✅ Controllers responsáveis pela lógica de negócio  
+✅ Menu principal centralizando as operações  
+✅ Sistema expansível sem quebrar funcionalidades  
 
-🧱 Arquitetura Utilizada
+---
 
-O projeto segue uma abordagem semelhante ao padrão MVC simplificado, organizado em:
+## 🧱 Arquitetura Utilizada
+
+O projeto segue uma abordagem semelhante ao **MVC simplificado**, organizado em:
 
 /view
-   → Main.java (interface console)
+└── Main.java (interface console)
+
 /controller
-   → ContaController.java
-   → TransacaoController.java
-   → InvestimentoController.java
+├── ContaController.java
+├── TransacaoController.java
+└── InvestimentoController.java
+
 /model
-   → ContaModel.java
-   → TransacaoModel.java
-   → InvestimentoModel.java
+├── ContaModel.java
+├── TransacaoModel.java
+└── InvestimentoModel.java 
 
 
-Essa divisão torna o código:
+Essa organização torna o código:
 
-mais limpo
+- mais limpo  
+- mais fácil de manter  
+- mais testável  
+- mais próximo de aplicações bancárias reais  
 
-mais testável
+---
 
-mais fácil de manter
+## 🔍 Funcionalidades Implementadas
 
-mais próximo de aplicações bancárias reais
-
-🔍 Funcionalidades Implementadas
-🧾 Menu Principal
-
+### 🧾 **Menu Principal**
 O usuário pode:
 
-✔ Criar uma conta
-✔ Consultar dados da conta
-✔ Acessar o menu de transações
-✔ Acessar o menu de investimentos
-✔ Encerrar a aplicação com confirmação
+✔ Criar uma conta  
+✔ Consultar dados da conta  
+✔ Acessar o menu de transações  
+✔ Acessar o menu de investimentos  
+✔ Encerrar a aplicação com confirmação  
 
-💰 Transações
+---
 
-Gerenciadas pelo TransacaoController, incluem:
+## 💰 Transações
 
-✔ Enviar dinheiro
-✔ Receber dinheiro
-✔ Validar saldo suficiente
-✔ Loops de confirmação
-✔ Submenu exclusivo para operações
+Gerenciadas pelo **TransacaoController**, incluem:
 
-📈 Investimentos
+✔ Enviar dinheiro  
+✔ Receber dinheiro  
+✔ Verificar saldo antes de enviar  
+✔ Loops de confirmação  
+✔ Submenu exclusivo para operações  
 
-Implementado com o InvestimentoController, oferecendo:
+---
 
-✔ Realizar investimento
-✔ Consultar informações já investidas
-✔ Validação de valores
-✔ Armazenamento via InvestimentoModel
+## 📈 Investimentos
 
-👤 Gerenciamento de Conta
+Implementado pelo **InvestimentoController**, oferecendo:
 
-O ContaController é responsável por:
+✔ Realizar investimento  
+✔ Consultar valores investidos  
+✔ Validação de valores informados  
+✔ Armazenamento de dados via InvestimentoModel  
 
-✔ Criar conta
-✔ Consultar dados
-✔ Alterar informações da conta
-✔ Deletar conta com confirmação
-✔ Manter o estado enquanto o sistema está ativo
+---
 
-🎯 Objetivo Educacional
+## 👤 Gerenciamento de Conta
 
-Este projeto foi criado para:
+Feito pelo **ContaController**, responsável por:
 
-📘 Consolidar conceitos de POO na prática
-🏛 Simular um sistema bancário realista
-⚙️ Trabalhar lógica, validação e fluxo de menus
-🏦 Demonstrar entendimento de arquitetura aplicada 
+✔ Criar conta  
+✔ Consultar informações  
+✔ Alterar dados da conta  
+✔ Deletar conta com confirmação  
+✔ Manter estado da conta durante toda a execução  
 
-🛠 Tecnologias Utilizadas
+---
 
-Java 17+
+## 🎯 Objetivo Educacional
 
-Scanner para entrada de dados
+Este projeto foi desenvolvido para:
 
-Conceitos de:
+📘 Consolidar conceitos de POO  
+⚙️ Trabalhar lógica e validações  
+🏛 Simular um sistema bancário realista  
+🏦 Demonstrar entendimento de arquitetura aplicada  
 
-Encapsulamento
+---
 
-Construtores
+## 🛠 Tecnologias Utilizadas
 
-Objetos compartilhados entre controllers
+- **Java 17+**
+- **Scanner** para entrada de dados
+- Conceitos fundamentais:
+  - Encapsulamento  
+  - Construtores  
+  - Objetos compartilhados entre controllers  
+  - Estrutura de pacotes  
+  - Switch-case organizado  
 
-Switch-case modularizado
-
-Estrutura de pacotes
